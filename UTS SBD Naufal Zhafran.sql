@@ -54,7 +54,7 @@ CREATE TABLE Booking (
     CONSTRAINT ck_booking_to   CHECK (dateTo   > CURRENT_DATE),
     CONSTRAINT ck_booking_order CHECK (dateTo > dateFrom),
 
-    -- (e) Kamar yang sama tidak boleh double-booked (periode tidak boleh tumpang tindih)
+    -- (e) Kamar yang sama tidak boleh double-booked
     CONSTRAINT ex_room_no_overlap EXCLUDE USING gist (
         hotelNo WITH =, roomNo WITH =,
         daterange(dateFrom, dateTo, '[)') WITH &&
