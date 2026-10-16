@@ -1,2 +1,2 @@
 # UTS-SBD
-# repository untuk menyelesaikan UTS SBD 
+# repository untuk UTS SBD 
