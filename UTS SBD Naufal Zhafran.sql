@@ -72,10 +72,4 @@ INSERT INTO Guest VALUES ('G001','Budi Santoso','Jl. Merdeka 1, Jakarta'),
                          ('G002','Siti Aminah','Jl. Sudirman 5, Bandung');
 INSERT INTO Room  VALUES (1,'H001','Single',50.00),(2,'H001','Double',80.00);
 
--- BERHASIL
 INSERT INTO Booking VALUES ('H001','G001', CURRENT_DATE+10, CURRENT_DATE+15, 1);
-
-
-
-
-
